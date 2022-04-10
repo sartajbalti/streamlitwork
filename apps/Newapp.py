@@ -108,4 +108,9 @@ def app():
                     z = st.selectbox("Select the value for x  ", con1, key='hist')
                     fig1 = px.histogram(df, x=z)
                     st.write(fig1)
+                    con1 = df.columns
+                    st.markdown("**Stacked values in Histogram In plotly different values can be shown in one column by using the color argument.**")
+                    f= st.selectbox("Select the value for Color  ", con1, key='hist')
+                    fig1 = px.histogram(df, x=z, color = f)
+                    st.write(fig1)
                 
