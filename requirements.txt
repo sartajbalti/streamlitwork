@@ -9,4 +9,8 @@ seaborn==0.11.2
 statsmodels==0.13.2
 streamlit==1.8.1
 streamlit_pandas_profiling==0.1.1
+<<<<<<< HEAD
 jinja2==3.0.3
+=======
+jinja2
+>>>>>>> b59a3d6c1c8d4299dc51da977ab10da7b66c6749
