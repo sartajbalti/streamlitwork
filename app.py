@@ -5,12 +5,14 @@ from apps import (
     eda,
     Newapp,
     corr,
-    normalitytest
+    normalitytest,
+    home
 )
 
 
 apps = MultiApp()
 # Add all your application here
+apps.add_app("Home Page", home.app)
 apps.add_app("Plotly", Newapp.app)
 apps.add_app("EDA Analysis", eda.app)
 apps.add_app("Correlation", corr.app)
