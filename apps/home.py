@@ -22,4 +22,4 @@ def app():
         ''')
         st.title("DATA SCIENCE LIFE CYCLE")
         image = Image.open('chart.png')
-        st.image(image, caption="Data Science", width=1200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+        st.image(image, caption="Data Science", width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
