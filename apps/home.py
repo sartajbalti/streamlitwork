@@ -8,18 +8,26 @@ import statsmodels.api as sm
 import io
 from PIL import Image 
 def app():
-        # Web App Title
-        st.markdown('''
-        # **Home Page**
-        This is the **Home page of our app** 
-        - > This app will help you to perform multiple task 
-        - > Main purpose of this app to make a combine app where can you do all the Analysis related to the Data Science on one Page
-        - > This App will do plot animated graphs using Ploty
-        - > Will do EDA Analysis Using Pandas-Profiling
-        - > Will do Check the Correlation of the Data
-        - > And Also check the Normality of the Data.
-        ---
-        ''')
-        st.title("DATA SCIENCE LIFE CYCLE")
-        image = Image.open('chart.png')
-        st.image(image, caption="Data Science", width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+        col1, col2, col3 = st.columns([1,6,1])
+        with col3:
+         images = Image.open('abc.png')
+         st.image(images, caption="Data Science", width=200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+       
+
+         
+        with col2: # Web App Title
+                st.markdown('''
+                # **Home Page**
+                This is the **Home page of our app** 
+                - > This app will help you to perform multiple task 
+                - > Main purpose of this app to make a combine app where can you do all the Analysis related to the Data Science on one Page
+                - > This App will do plot animated graphs using Ploty
+                - > Will do EDA Analysis Using Pandas-Profiling
+                - > Will do Check the Correlation of the Data
+                - > And Also check the Normality of the Data.
+                ---
+                ''')
+        
+                st.title("DATA SCIENCE LIFE CYCLE")
+                image = Image.open('chart.png')
+                st.image(image, caption="Data Science", width=1000, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
